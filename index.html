@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Varsity FM</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #fff;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		
+		/* Header styles */
+		.header {
+			background-color: #003366;
+			padding: 20px;
+			color: #fff;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		
+		/* Navigation styles */
+		nav {
+			background-color: #eee;
+			padding: 10px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		
+		nav a {
+			color: #333;
+			text-decoration: none;
+			padding: 10px;
+		}
+		
+		nav a:hover {
+			background-color: #003366;
+			color: #fff;
+		}
+		
+		/* Content styles */
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		/* Footer styles */
+		.footer {
+			background-color: #003366;
+			padding: 10px;
+			color: #fff;
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		
+		/* Form styles */
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+		
+		form input[type="text"], form input[type="email"], form textarea {
+			display: block;
+			margin-bottom: 10px;
+			padding: 10px;
+			width: 100%;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+			color: #333;
+		}
+		
+		form input[type="submit"] {
+			display: block;
+			margin-top: 10px;
+			padding: 10px;
+			background-color: #003366;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		
+		form input[type="submit"]:hover {
+			background-color: #005699;
+		}
+		
+		form p {
+			font-size: 14px;
+			color: #333;
+			margin-bottom: 10px;
+		}
+		
+		form label {
+			display: block;
+			font-size: 16px;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 10px;
+		}
+		
+		/* Image styles */
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>Varsity FM</h1>
+		<p>Access granted with student cards only.</p>
+	</header>
+	
+	<nav>
+		<a href="#modeling">Modeling</a>
+		<a href="#competitions">Varsity Competitions</a>
+		<a href="#business">Business</a>
+    <a href="#cool-ideas">Cool Ideas</a>
+		<a href="#projects">Projects</a>
+	</nav>
+	
+	<main class="container">
+		<section id="modeling">
+			<h2>Modeling</h2>
+			<p>Here you will find information on the modeling events that we cover.</p>
+			<!-- Add any relevant content here -->
+		</section>
+		
+		<section id="competitions">
+			<h2>Varsity Competitions</h2>
+			<p>Stay updated with the latest varsity competitions and events.</p>
+			<!-- Add any relevant content here -->
+		</section>
+		
+		<section id="business">
+			<h2>Business</h2>
+			<p>Find out what's happening in the world of business on campus.</p>
+			<!-- Add any relevant content here -->
+		</section>
+		
+		<section id="cool-ideas">
+			<h2>Cool Ideas</h2>
+			<p>Get inspired with some of the coolest ideas on campus.</p>
+			<!-- Add any relevant content here -->
+		</section>
+		
+		<section id="projects">
+			<h2>Projects</h2>
+			<p>Discover some of the exciting projects that students are working on.</p>
+			<!-- Add any relevant content here -->
+		</section>
+		
+		<form>
+			<h2>Contact Us</h2>
+			<p>Have any questions or suggestions? Contact us using the form below.</p>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
+			
+			<input type="submit" value="Submit">
+		</form>
+	</main>
+	
+	<footer class="footer">
+		<p>Varsity FM &copy; 2023 Cape Town, South Africa</p>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// Smooth scrolling for anchor links
+			$('a[href^="#"]').on('click', function(event) {
+				var target = $(this.getAttribute('href'));
+				if (target.length) {
+					event.preventDefault();
+					$('html, body').stop().animate({
+						scrollTop: target.offset().top
+					}, 1000);
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
